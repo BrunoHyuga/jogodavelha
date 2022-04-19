@@ -1,0 +1,46 @@
+* {
+    preenchimento :  0 ;
+    margem :  0 ;
+    estouro-x : oculto;
+}
+. jogo {
+    largura :  500px ; _
+    altura :  200px ; _
+    borda :  preto sólido de 1 px ;
+    margem : automático;
+}
+# caractere {
+    largura :  20px ; _
+    altura :  50px ; _
+    cor de fundo : vermelho;
+    posição : relativa;
+    topo :  150px ; _
+}
+. animar {
+    animação : salto 0,3 s linear;
+}
+@keyframes salto{
+    0 % { topo :  150 px ;}
+    30 % { topo :  100 px ;}
+    70 % { topo :  100 px ;}
+    100 % { topo :  150 px ;}
+}
+
+# bloco {
+    cor de fundo : azul;
+    largura :  20px ; _
+    altura :  20px ; _
+    posição : relativa;
+    topo :  130 px ;
+    esquerda :  500px ; _
+    animação : bloco 1 s linear infinito;
+}
+@keyframes bloco{
+    0 % { esquerda :  500 px }
+    100 % { esquerda :  -20 px }
+}
+p {
+    text-align : centro;
+}
+© 2022 GitHub, Inc.
+Termos
